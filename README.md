@@ -7,6 +7,7 @@ Check out the live version of the game <a href="https://star-date-reveal-game-di
 ## Overview
 The Star Date Reveal Game is a web application that uses a set of cards, each containing a unique set of numbers, to guess the user's birth date. The user selects checkboxes based on whether their birth date appears on the displayed cards, and the game algorithm calculates the birth date based on these selections. The game is designed to be dynamic and responsive, ensuring a seamless experience across different devices and screen sizes.
 <br>
+<br>
 <img src="sdrg img.jpeg" alt="Weather" width="100%">
 
 ## Tech Stack
