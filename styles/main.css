@@ -1,0 +1,96 @@
+        body {
+            margin: auto;
+            padding: 1.2em;
+            overflow-x: hidden;
+            font-family: "Roboto Mono", monospace;
+            background-size: 100% 100%;
+            background-position: 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+            background-image: repeating-linear-gradient(315deg, #00FFFF2E 92%, #073AFF00 100%), repeating-radial-gradient(75% 75% at 238% 218%, #00FFFF12 30%, #073AFF14 39%), radial-gradient(99% 99% at 109% 2%, #C819DFFF 0%, #FF00D9FF 12%, #C716E3FF 32%, #073AFF00 100%), radial-gradient(99% 99% at 21% 78%, #7B00FFFF 0%, #073AFF00 100%), radial-gradient(160% 154% at 711px -303px, #2000FFFF 0%, #073AFFFF 100%);
+        }
+        
+        .title {
+            text-align: center;
+        }
+        
+        .my-element {
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+            color: #EBF4F6;
+        }
+        
+        .card-list {
+            margin-top: 6em;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+            gap: 2em;
+            border-radius: 10px;
+        }
+        
+        .card-item {
+            gap: 1.5em;
+            text-align: center;
+            border: 1px solid rgb(255, 255, 255);
+            padding: 1.5em;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            box-shadow: 0px 0px 10px rgba(250, 250, 250, 0), 0px 5px 10px rgba(255, 255, 255, 0);
+            border-radius: 10px;
+            background: repeating-conic-gradient( from 0deg at 80% 50%, #5691f580 0% 8.25%, #b338ff80 8.25% 16.5%, #f8305880 16.5% 25%), repeating-conic-gradient( from 15deg at 50% 50%, #e856f580 0% 8.25%, #ff384c80 8.25% 16.5%, #e7f83080 16.5% 25%), repeating-conic-gradient( from 0deg at 20% 50%, #f58356ff 0% 8.25%, #caff38ff 8.25% 16.5%, #30f88aff 16.5% 25%);
+            transform: perspective(500px) rotateY(0.5deg) rotateX(0.5deg);
+            transform-style: preserve-3d;
+            transition: transform 0.5s;
+            /* Add mirror effect */
+            &:after {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                transform: scaleY(-1);
+                background-color: #EBF4F6;
+                opacity: 0.5;
+                filter: blur(2px);
+                border-radius: 10px;
+            }
+        }
+        
+        .card-item h2 {
+            color: #000000;
+            border: 1px solid rgb(255, 255, 255);
+            border-radius: 8px;
+            margin: 0;
+            background-color: #94d3db
+        }
+        
+        label {
+            text-align: center;
+            color: #ffffff;
+        }
+        
+        input[type=checkbox] {
+            margin: auto;
+            width: 3em;
+            height: 3em;
+            border-radius: 25px;
+            box-shadow: 0px 5px 10px rgba(213, 39, 39, 0.2), 0px 5px 10px rgba(0, 0, 0, 0.3);
+            background-color: #ba3232;
+            /* white background */
+            transform: perspective(500px) rotateY(10deg);
+            /* create a sense of depth */
+        }
+        
+        button#checkResult {
+            margin: 3em 0;
+            width: 100%;
+            height: 4em;
+            border-radius: 10px;
+            background-image: linear-gradient(#53d455, #6ac761, #c2d796, #3fe4ad);
+        }
+        
+        @media screen and (min-width: 420px) {
+            body {
+                width: 420px;
+            }
+        }
